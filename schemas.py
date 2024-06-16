@@ -1,6 +1,6 @@
-from pydantic import BaseModel
-from typing import Optional
 from datetime import date
+from typing import Optional
+from pydantic import BaseModel
 
 class ContactBase(BaseModel):
     first_name: str

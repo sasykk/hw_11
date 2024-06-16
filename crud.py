@@ -1,7 +1,7 @@
-from sqlalchemy.orm import Session
 from models import Contact
-from schemas import ContactCreate, ContactUpdate
+from sqlalchemy.orm import Session
 from datetime import date, timedelta
+from schemas import ContactCreate, ContactUpdate
 
 def get_contact(db: Session, contact_id: int):
     return db.query(Contact).filter(Contact.id == contact_id).first()
